@@ -1,13 +1,119 @@
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Verdana';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f6f6f2;;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Verdana';
+}
+
+.container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.header {
+  font-size: larger;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 1.5rem;
+}
+
+.search {
+  font-family: 'Verdana';
+  display: flex;
+  align-items: center;
+  background-color: #BADFE7;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 1.5em;
+  block-size: 35px;
+}
+
+.search input{
+  border: none;
+  resize: none;
+  padding-left: 4px;
+  font-size: 15pt;
+  background-color: #BADFE7;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+.search-icon {
+  color: #388087
+}
+
+.notes-list {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /*minmax specifies a range for size*/
+}
+
+.save {
+  background-color: #BADFE7;
+  border: none;
+  border-radius: 15px;
+  font-size: 12pt;
+  padding: 5px 10px 5px 10px;
+}
+
+.save:hover {
+  background-color: #cbf4fd;
+  cursor: pointer;
+}
+
+.delete-icon {
+  color: #388087
+}
+
+.delete-icon:hover {
+  cursor: pointer;
+  transform: scale(1.25);
+}
+
+/* whatever has the note css class and the new css class*/
+.note.new {
+  background-color: #6FB3B8;
+}
+
+textarea {
+  font-family: 'Verdana';
+  font-size: 15pt;
+  border: none;
+  resize: none;
+  background-color: #6FB3B8;
+}
+
+/*when textarea is clicked/focused on*/
+textarea:focus {
+  outline: none;
+}
+
+/* style the note component */
+.note {
+  display: flex; /*flexbox positions the direct child elements of note*/
+  flex-direction: column; 
+  justify-content: space-between;
+  white-space: pre-wrap;
+  background-color: #BADFE7;
+  border-radius: 10px;
+  font-size: 15pt;
+  padding: 1rem; /*change padding relative to font size*/
+  min-height: 170px;
+}
+
+.note-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
