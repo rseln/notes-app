@@ -1,6 +1,6 @@
 # Note Taking App
 
-This project is a note taking app with functionalities to delete, add, and search for notes!
+This project is a note taking app with functionalities to delete, add, and search for notes! It can be accessed here: https://rseln.github.io/notes-app/
 
 # Getting Started with Create React App
 
