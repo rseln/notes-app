@@ -28,7 +28,7 @@ const AddNote = ({ handleAddNote }) => {
                 onChange={handleChange}
 
             ></textarea>
-            <div className='note-footer'>
+            <div className='note-footer-save'>
                 <small>{charLimit - noteText.length} remaining</small>
                 <button className='save' onClick={handleSave}>Save</button>
             </div>

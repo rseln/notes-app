@@ -56,7 +56,7 @@ code {
 .notes-list {
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /*minmax specifies a range for size*/
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /*minmax specifies a range for size*/
 }
 
 .save {
@@ -73,10 +73,19 @@ code {
 }
 
 .delete-icon {
-  color: #388087
+  color: #388087;
+}
+
+.edit-icon {
+  color: #388087;
 }
 
 .delete-icon:hover {
+  cursor: pointer;
+  transform: scale(1.25);
+}
+
+.edit-icon:hover {
   cursor: pointer;
   transform: scale(1.25);
 }
@@ -115,6 +124,19 @@ textarea:focus {
 
 .note-footer {
   display: flex;
+  padding-top: 1rem;
   align-items: center;
+}
+
+.note-footer-save {
+  display: flex;
+  padding-top: 1rem;
   justify-content: space-between;
+  align-items: center;
+}
+
+.note-footer-icons {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
 }
